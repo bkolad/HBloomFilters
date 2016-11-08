@@ -1,10 +1,10 @@
 module BloomFilters.Mutable
     (
       MutBloom
---    , elem
---    , notElem
---    , insert
---    , length
+    , elem
+    , notElem
+    , insert
+    , length
     , new
     ) where
 
