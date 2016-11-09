@@ -1,11 +1,16 @@
-module BloomFilters.Immutable where
+module BloomFilters.Immutable
+    ( Bloom
+    , Word32
+    , Word8
+    , elem
+    , fromList) where
 
 
 import BloomFilters.Internal
 import BloomFilters.Mutable (insert, new)
 import Data.Array.ST (runSTUArray)
 import Data.Array.IArray ((!), bounds)
-import Data.Word (Word32)
+import Data.Word (Word32, Word8)
 import Prelude hiding (elem, length, notElem)
 
 
